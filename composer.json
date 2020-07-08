@@ -1,0 +1,42 @@
+{
+    "name": "hydra/uri",
+    "description": "Uri is a helper class that is used to make parsing URIs simpler and easier.",
+    "keywords": [
+        "hydra",
+        "uri"
+    ],
+    "homepage": "https://github.com/hydra/uri",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Joe Karam",
+            "email": "joekaram97@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hydra\\Uri\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Hydra\\Uri\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
